@@ -7,6 +7,7 @@
 //
 
 import UIKit
+//import Alamofire
 
 class WeatherVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
@@ -16,6 +17,8 @@ class WeatherVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet weak var currentWeatherImage: UIImageView!
     @IBOutlet weak var currentWeatherTypeLabel: UILabel!
     
+    var currentWeather = CurrentWeather()
+    
     @IBOutlet weak var tableView: UITableView!
     
     
@@ -24,8 +27,11 @@ class WeatherVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         
         tableView.delegate = self
         tableView.dataSource = self
-        
     
+        currentWeather.downloadWeatherDetails {
+            
+        }
+        
     }
     
     
