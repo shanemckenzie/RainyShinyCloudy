@@ -42,7 +42,7 @@
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ZML-iE-Tsq">
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" preservesSuperviewLayoutMargins="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ahh-zY-LCT">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" preservesSuperviewLayoutMargins="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ahh-zY-LCT">
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="120" id="7ox-JW-0Ca"/>
                                                     <constraint firstAttribute="height" constant="120" id="IwY-Bb-fMl"/>
@@ -70,14 +70,14 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ocJ-Fb-gXa">
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="weatherCell" rowHeight="80" id="i2M-2S-MRV">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="weatherCell" rowHeight="80" id="i2M-2S-MRV" customClass="WeatherCell" customModule="RainyShinyCloudy" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="i2M-2S-MRV" id="V3I-6F-rs9">
-                                            <frame key="frameInset" width="375" height="79"/>
+                                            <frame key="frameInset" width="375" height="80"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="whC-Dv-erP">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="whC-Dv-erP">
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="50" id="92C-1D-vIU"/>
                                                         <constraint firstAttribute="height" constant="50" id="tYR-vJ-pxC"/>
@@ -129,6 +129,13 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <connections>
+                                            <outlet property="dayLabel" destination="2Am-cu-vFV" id="GJA-IA-260"/>
+                                            <outlet property="highTemp" destination="OP7-8L-L89" id="jNm-w9-fpO"/>
+                                            <outlet property="lowTemp" destination="ztM-Lv-aLN" id="Iq4-jV-wWl"/>
+                                            <outlet property="weatherIcon" destination="whC-Dv-erP" id="g3i-lT-ID3"/>
+                                            <outlet property="weatherType" destination="mEJ-zr-OpO" id="KF0-RU-9sH"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>

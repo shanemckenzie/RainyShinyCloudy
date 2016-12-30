@@ -16,6 +16,9 @@
 		790F52981DC1887E00BEB615 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 790F52961DC1887E00BEB615 /* LaunchScreen.storyboard */; };
 		790F52A31DC1887E00BEB615 /* RainyShinyCloudyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790F52A21DC1887E00BEB615 /* RainyShinyCloudyTests.swift */; };
 		790F52AE1DC1887E00BEB615 /* RainyShinyCloudyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790F52AD1DC1887E00BEB615 /* RainyShinyCloudyUITests.swift */; };
+		79226B3E1E0B67FA0003D857 /* Forecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79226B3D1E0B67FA0003D857 /* Forecast.swift */; };
+		79226B401E146E470003D857 /* WeatherCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79226B3F1E146E470003D857 /* WeatherCell.swift */; };
+		79226B421E149A060003D857 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79226B411E149A060003D857 /* Location.swift */; };
 		793C1AFF1DCF88480070CA50 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793C1AFE1DCF88480070CA50 /* Constants.swift */; };
 		793C1B011DCF8A4D0070CA50 /* CurrentWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793C1B001DCF8A4D0070CA50 /* CurrentWeather.swift */; };
 		79537C691DE29B4D00333ACB /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79537C681DE29B4D00333ACB /* Alamofire.framework */; };
@@ -59,6 +62,9 @@
 		790F52A91DC1887E00BEB615 /* RainyShinyCloudyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RainyShinyCloudyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		790F52AD1DC1887E00BEB615 /* RainyShinyCloudyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RainyShinyCloudyUITests.swift; sourceTree = "<group>"; };
 		790F52AF1DC1887E00BEB615 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		79226B3D1E0B67FA0003D857 /* Forecast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Forecast.swift; sourceTree = "<group>"; };
+		79226B3F1E146E470003D857 /* WeatherCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherCell.swift; sourceTree = "<group>"; };
+		79226B411E149A060003D857 /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		793C1AFE1DCF88480070CA50 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		793C1B001DCF8A4D0070CA50 /* CurrentWeather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentWeather.swift; sourceTree = "<group>"; };
 		79537C681DE29B4D00333ACB /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "Pods/../build/Release-iphoneos/Alamofire/Alamofire.framework"; sourceTree = "<group>"; };
@@ -149,6 +155,9 @@
 				790F52991DC1887E00BEB615 /* Info.plist */,
 				793C1AFE1DCF88480070CA50 /* Constants.swift */,
 				793C1B001DCF8A4D0070CA50 /* CurrentWeather.swift */,
+				79226B3D1E0B67FA0003D857 /* Forecast.swift */,
+				79226B3F1E146E470003D857 /* WeatherCell.swift */,
+				79226B411E149A060003D857 /* Location.swift */,
 			);
 			path = RainyShinyCloudy;
 			sourceTree = "<group>";
@@ -469,8 +478,11 @@
 			files = (
 				790F52901DC1887E00BEB615 /* WeatherVC.swift in Sources */,
 				790F528E1DC1887E00BEB615 /* AppDelegate.swift in Sources */,
+				79226B401E146E470003D857 /* WeatherCell.swift in Sources */,
 				793C1B011DCF8A4D0070CA50 /* CurrentWeather.swift in Sources */,
 				793C1AFF1DCF88480070CA50 /* Constants.swift in Sources */,
+				79226B3E1E0B67FA0003D857 /* Forecast.swift in Sources */,
+				79226B421E149A060003D857 /* Location.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
